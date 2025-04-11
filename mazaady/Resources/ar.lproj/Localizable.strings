@@ -1,0 +1,53 @@
+// General
+"app_name" = "مزادي";
+"ok" = "موافق";
+"cancel" = "إلغاء";
+"error" = "خطأ";
+"retry" = "إعادة المحاولة";
+"loading" = "جاري التحميل...";
+"no_internet" = "لا يوجد اتصال بالإنترنت";
+"search" = "بحث";
+"search_hint" = "البحث عن منتجات...";
+
+// Tab Bar
+"home" = "الرئيسية";
+"categories" = "الفئات";
+"search_tab" = "بحث";
+"profile" = "الملف الشخصي";
+
+// Profile
+"products" = "المنتجات";
+"articles" = "المقالات";
+"reviews" = "التقييمات";
+"followers" = "المتابعين";
+"following" = "يتابع";
+"settings" = "الإعدادات";
+"highest_bid" = "أعلى عرض";
+"offer_price" = "سعر العرض";
+"auction_finished" = "انتهى المزاد";
+"egp" = "جنيه";
+"location" = "مصر، القاهرة";
+
+// Language
+"language" = "اللغة";
+"english" = "English";
+"arabic" = "العربية";
+
+// Tags
+"top_tags" = "أهم الوسوم";
+"sunglasses" = "نظارات شمسية";
+"makeup" = "مكياج";
+"electronics" = "إلكترونيات";
+"watches" = "ساعات";
+"clothes" = "ملابس";
+"scarfs" = "أوشحة";
+"bags" = "حقائب";
+"shoes" = "أحذية";
+"men_wear" = "ملابس رجالي";
+"car_and_motorcycle" = "سيارات ودراجات نارية";
+"sportswear" = "ملابس رياضية";
+"jackets" = "جاكيتات";
+
+// Products
+"package_of_clothes" = "حزمة ملابس";
+"collection_of_used_clothes" = "مجموعة ملابس مستعملة";

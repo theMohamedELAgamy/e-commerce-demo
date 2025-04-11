@@ -1,0 +1,19 @@
+/* Profile Screen */
+"profile" = "Profile";
+"products" = "Products";
+"articles" = "Articles";
+"reviews" = "Reviews";
+"followers" = "Followers";
+"following" = "Following";
+"settings" = "Settings";
+
+/* Search Screen */
+"search" = "Search";
+"search_hint" = "Search products...";
+"no_results" = "No results found";
+"try_again" = "Try Again";
+
+/* Common */
+"error" = "Error";
+"ok" = "OK";
+"cancel" = "Cancel";

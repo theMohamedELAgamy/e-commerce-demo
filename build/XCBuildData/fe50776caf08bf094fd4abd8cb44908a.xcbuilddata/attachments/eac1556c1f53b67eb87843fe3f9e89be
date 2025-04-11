@@ -1,0 +1,478 @@
+{
+  "" : {
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/mazaady-master.dia",
+    "emit-module-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/mazaady-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/mazaady-master-emit-module.dia",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/mazaady-master.swiftdeps"
+  },
+  "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/AppDelegate.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Models/Advertisement.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Advertisement~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Models/Product.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Product~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Models/Review.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Review~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Models/Tag.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Tag~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Models/User.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/User~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Networking/APIEndpoint.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIEndpoint~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Networking/APIError.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/APIError~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Networking/NetworkManager.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkManager~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Networking/NetworkProtocols.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/NetworkProtocols~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/SceneDelegate.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SceneDelegate~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Services/AdvertisementService.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementService~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Services/CacheManager.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/CacheManager~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Services/DataManager.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/DataManager~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Services/ProductService.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductService~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Services/TagService.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagService~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Services/UserService.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UserService~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/Constants.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Constants~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/Extensions/String+Extensions.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Extensions~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/Extensions/UIImageView+Extensions.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIImageView+Extensions~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/Extensions/UIView+Extensions.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-a93ec6452f108eb55bf35497ae5232b2~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/LocalizationHelper.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LocalizationHelper~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/Observable.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/Observable~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/String+Localization.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/String+Localization~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Utilities/UIView+Extensions.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/UIView+Extensions-eb3e837cb044627d14de6825ca62e2d9~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/AdvertisementViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/BaseViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/BaseViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/LanguageViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/ProductListViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductListViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/ProductViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/ProfileViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/ReviewViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ReviewViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/ViewModels/TagViewModel.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagViewModel~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Advertisements/AdvertisementCollectionViewCell.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/AdvertisementCollectionViewCell~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Language/LanguageTableViewCell.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageTableViewCell~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Language/LanguageViewController.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/LanguageViewController~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Products/ProductCollectionViewCell.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-69a2c74b3101dffc9b206abdc69fd447~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Profile/Cells/ProfileHeaderView.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-79b15c867d57567be35b61ee6915e0d4~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Profile/ProfileHeaderView.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileHeaderView-2ff9c6863d6085b056f2e55437fc9efc~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Profile/ProfileViewController.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProfileViewController~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Search/SearchViewController.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/SearchViewController~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Shared/ProductCollectionViewCell.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/ProductCollectionViewCell-22230903d31f591839db6e9acd479536~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Shared/TagCollectionViewCell.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-a584824b6e25930354e84d5bd06218c4~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/TabBar/TabBarController.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TabBarController~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/Views/Tags/TagCollectionViewCell.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/TagCollectionViewCell-2ea6fc1be4f5290e80f532071e883eca~partial.swiftmodule"
+  },
+  "/Users/mohamed/Downloads/mazaady/mazaady/main.swift" : {
+    "const-values" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.swiftconstvalues",
+    "dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.d",
+    "diagnostics" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.dia",
+    "index-unit-output-path" : "/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.o",
+    "swift-dependencies" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main.swiftdeps",
+    "swiftmodule" : "/Users/mohamed/Downloads/mazaady/build/mazaady.build/Debug-iphonesimulator/mazaady.build/Objects-normal/arm64/main~partial.swiftmodule"
+  }
+}
