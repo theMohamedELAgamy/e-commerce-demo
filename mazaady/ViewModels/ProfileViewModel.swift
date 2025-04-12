@@ -29,14 +29,20 @@ class ProfileViewModel: ProfileViewModelProtocol {
     var errorMessage: Observable<String?> = Observable(nil)
     private var allProducts: [Product] = []
 
-    // MARK: - Services
-    private let networkManager: NetworkManagerProtocol = NetworkManager.shared
+  
+
+    private var profileUseCase:ProfileUseCaseProtocol
+
+    init(profileUseCase:ProfileUseCaseProtocol){
+        self.profileUseCase=profileUseCase
+    }
+    
     
     // MARK: - Public Methods
     func fetchUserProfile() {
         isLoading.value = true
         
-        networkManager.fetch(endpoint: .user, responseType: User.self) { [weak self] result in
+        self.profileUseCase.fetchUserProfile { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {
@@ -55,7 +61,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
     func fetchProducts() {
         isLoading.value = true
         
-        networkManager.fetch(endpoint: .products, responseType: ProductsResponse.self) { [weak self] result in
+        self.profileUseCase.fetchProducts { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {
@@ -75,7 +81,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
     func fetchTags() {
         isLoading.value = true
         
-        networkManager.fetch(endpoint: .tags, responseType: TagsResponse.self) { [weak self] result in
+        self.profileUseCase.fetchTags { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {
@@ -83,7 +89,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
                 
                 switch result {
                 case .success(let response):
-                    self.tags.value = response.data
+                    self.tags.value = response
                 case .failure(let error):
                     self.errorMessage.value = error.localizedDescription
                 }
@@ -96,7 +102,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
     func fetchAdvertisements() {
         isLoading.value = true
         
-        networkManager.fetch(endpoint: .advertisements, responseType: AdvertisementsResponse.self) { [weak self] result in
+        self.profileUseCase.fetchAdvertisements { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {
@@ -104,7 +110,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
                 
                 switch result {
                 case .success(let response):
-                    self.advertisements.value = response.advertisements
+                    self.advertisements.value = response
                 case .failure(let error):
                     self.errorMessage.value = error.localizedDescription
                 }

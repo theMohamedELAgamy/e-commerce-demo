@@ -6,7 +6,7 @@ import Foundation
 // Protocol for the data manager
 protocol DataManagerProtocol {
     func fetchUserProfile(completion: @escaping (Result<User, APIError>) -> Void)
-    func fetchProducts(searchQuery: String?, completion: @escaping (Result<[Product], APIError>) -> Void)
+    func fetchProducts(completion: @escaping (Result<[Product], APIError>) -> Void)
     func fetchTags(completion: @escaping (Result<[Tag], APIError>) -> Void)
     func fetchAdvertisements(completion: @escaping (Result<[Advertisement], APIError>) -> Void)
 }
@@ -50,9 +50,9 @@ class DataManager: DataManagerProtocol {
     }
     
     // Fetch products with caching
-    func fetchProducts(searchQuery: String?, completion: @escaping (Result<[Product], APIError>) -> Void) {
+    func fetchProducts(completion: @escaping (Result<[Product], APIError>) -> Void) {
         // If search query is provided, skip cache and always make a network request
-        if let searchQuery = searchQuery, !searchQuery.isEmpty {
+        if true {
             networkService.fetchProducts() { result in
                 switch result {
                 case .success(let products):
@@ -61,7 +61,7 @@ class DataManager: DataManagerProtocol {
                 case .failure(let error):
                     // For demo purposes, filter mock data if network request fails
                     #if DEBUG
-                    let filteredProducts = Product.mockProducts.filter { $0.name.lowercased().contains(searchQuery.lowercased()) }
+                    let filteredProducts = Product.mockProducts
                     completion(.success(filteredProducts))
                     #else
                     completion(.failure(error))

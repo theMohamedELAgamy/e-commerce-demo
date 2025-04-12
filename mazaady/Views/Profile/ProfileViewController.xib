@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="Mazaady" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="mazaady" customModuleProvider="target">
             <connections>
                 <outlet property="articlesButton" destination="NZp-fl-M1t" id="FnT-6p-qhz"/>
                 <outlet property="collectionView" destination="qiP-3m-4kM" id="U5a-Zc-tJW"/>
@@ -34,14 +34,14 @@
                             <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wdk-OV-hkD" userLabel="Profile Header Container">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="160"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="190"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="height" constant="160" id="w2X-wO-oBd"/>
+                                        <constraint firstAttribute="height" constant="190" id="w2X-wO-oBd"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VQd-nC-Jv9" userLabel="Tabs Container">
-                                    <rect key="frame" x="0.0" y="160" width="393" height="50"/>
+                                    <rect key="frame" x="0.0" y="190" width="393" height="50"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="9Jf-Kb-Jco">
                                             <rect key="frame" x="16" y="0.0" width="361" height="50"/>
@@ -73,7 +73,7 @@
                                             </subviews>
                                         </stackView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycw-9o-zXP" userLabel="Indicator">
-                                            <rect key="frame" x="76" y="46" width="40" height="4"/>
+                                            <rect key="frame" x="56.333333333333343" y="46" width="40" height="4"/>
                                             <color key="backgroundColor" red="0.77647058823529413" green="0.19607843137254902" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="4" id="U5a-W9-lSb"/>
@@ -93,11 +93,11 @@
                                     </constraints>
                                 </view>
                                 <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for products..." translatesAutoresizingMaskIntoConstraints="NO" id="UKd-ab-rGT">
-                                    <rect key="frame" x="0.0" y="210" width="393" height="56"/>
+                                    <rect key="frame" x="0.0" y="240" width="393" height="56"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </searchBar>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qiP-3m-4kM">
-                                    <rect key="frame" x="0.0" y="266" width="393" height="934"/>
+                                    <rect key="frame" x="0.0" y="296" width="393" height="904"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wdl-Wq-pK9">
                                         <size key="itemSize" width="128" height="128"/>
@@ -162,13 +162,13 @@
     <resources>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <systemColor name="labelColor">
-            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

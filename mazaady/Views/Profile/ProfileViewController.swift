@@ -55,7 +55,7 @@ class ProfileViewController: UIViewController {
     
     // MARK: - Setup
     private func setupViewModel() {
-        viewModel = ProfileViewModel()
+        viewModel = ProfileViewModel(profileUseCase: ProfileUseCase(productService: ProductService(), UserService: UserService(), TagService: TagService(), advertisementService: AdvertisementService()))
     }
     
     private func setupLayoutFactory() {
@@ -185,19 +185,22 @@ class ProfileViewController: UIViewController {
         let selectedButton = buttons[index]
         
         UIView.animate(withDuration: 0.3) {
-            self.segmentIndicator.center.x = selectedButton!.center.x
-            self.segmentIndicator.frame.size.width = selectedButton!.frame.width / 2
+            self.segmentIndicator.center.x = selectedButton!.center.x+15
         }
         
         // Load relevant data based on the selected tab
         switch index {
         case 0:
+            collectionView.isHidden=false
+            searchBar.isHidden=false
             viewModel.fetchProducts()
         case 1:
-            // For articles tab - not implemented in this demo
-            break
+            collectionView.isHidden=true
+            searchBar.isHidden=true
         case 2:
-            break
+            collectionView.isHidden=true
+            searchBar.isHidden=true
+
         default:
             break
         }
