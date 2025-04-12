@@ -7,9 +7,10 @@ class ProductCollectionViewCell: UICollectionViewCell {
     @IBOutlet private weak var productImageView: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
-    @IBOutlet private weak var statusLabel: UILabel!
-    @IBOutlet private weak var favoriteButton: UIButton!
     
+    @IBOutlet weak var offerPriceLabl: UILabel!
+    @IBOutlet weak var originalPriceLabl: UILabel!
+    @IBOutlet weak var offerPriceStack: UIStackView!
     @IBOutlet weak var daysDate: UILabel!
     @IBOutlet weak var hourseDate: UILabel!
     @IBOutlet weak var minutesDate: UILabel!
@@ -27,7 +28,6 @@ class ProductCollectionViewCell: UICollectionViewCell {
         productImageView.image = nil
         nameLabel.text = nil
         priceLabel.text = nil
-        statusLabel.isHidden = true
     }
     
     // MARK: - Setup
@@ -42,18 +42,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         productImageView.layer.cornerRadius = 8
         productImageView.clipsToBounds = true
         productImageView.contentMode = .scaleAspectFill
-        
-        // Configure status label
-        statusLabel.layer.cornerRadius = 4
-        statusLabel.clipsToBounds = true
-        statusLabel.textColor = .white
-        statusLabel.font = UIFont.boldSystemFont(ofSize: 10)
-        statusLabel.textAlignment = .center
-        statusLabel.isHidden = true
-        
-      
-        
-        // Configure text labels
+
         nameLabel.font = UIFont.boldSystemFont(ofSize: 14)
         nameLabel.textColor = UIColor.black
         nameLabel.numberOfLines = 2
@@ -78,10 +67,16 @@ class ProductCollectionViewCell: UICollectionViewCell {
             daysDate.text="\(timeComponents.days)"
             hourseDate.text="\(timeComponents.hours)"
             minutesDate.text="\(timeComponents.minutes)"
-            
-            
         }else{
             offerEndTimeStack.isHidden=true
+        }
+        
+        if let offer = product.offer{
+            originalPriceLabl.setStrikethroughText("\(product.price)")
+            offerPriceLabl.text="\(offer)"
+            offerPriceStack.isHidden=false
+        }else{
+            offerPriceStack.isHidden=true
         }
         
         if LocalizationHelper.shared.isRTL {
@@ -109,3 +104,13 @@ fileprivate struct TimeComponents {
     let hours: Int
     let minutes: Int
 }
+extension UILabel {
+    func setStrikethroughText(_ text: String, color: UIColor = .gray) {
+        let attributes: [NSAttributedString.Key: Any] = [
+            .strikethroughStyle: NSUnderlineStyle.single.rawValue,
+            .strikethroughColor: color
+        ]
+        self.attributedText = NSAttributedString(string: text, attributes: attributes)
+    }
+}
+
