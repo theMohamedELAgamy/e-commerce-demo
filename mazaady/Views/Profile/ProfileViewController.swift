@@ -19,14 +19,6 @@ class ProfileViewController: UIViewController {
         }
     }
     
-    // MARK: - Cell Identifiers
-    private enum CellIdentifier {
-        static let productCell = "ProductCell"
-        static let tagCell = "TagCell"
-        static let advertisementCell = "AdvertisementCell"
-        static let headerCell = "HeaderCell"
-    }
-    
     // MARK: - Outlets
     @IBOutlet weak var profileHeaderContainerView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -88,28 +80,8 @@ class ProfileViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        // Register cell nibs
-        collectionView.register(
-            UINib(nibName: "ProductCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: CellIdentifier.productCell
-        )
-        
-        collectionView.register(
-            UINib(nibName: "TagCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: CellIdentifier.tagCell
-        )
-        
-        collectionView.register(
-            UINib(nibName: "AdvertisementCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: CellIdentifier.advertisementCell
-        )
-        
-        // Register header
-        collectionView.register(
-            UICollectionReusableView.self,
-            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-            withReuseIdentifier: CellIdentifier.headerCell
-        )
+        // Register all cells using the factory
+        CellProviderFactory.registerAllCells(for: collectionView)
         
         // Set up compositional layout using our factory
         collectionView.collectionViewLayout = layoutFactory.createLayout()
@@ -281,39 +253,33 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let sectionType = sections[indexPath.section]
+        let provider = CellProviderFactory.provider(for: sectionType)
+        
+        let cell = type(of: provider).dequeueReusableCell(for: collectionView, at: indexPath)
         
         switch sectionType {
         case .tags:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.tagCell, for: indexPath) as! TagCollectionViewCell
             if indexPath.item < viewModel.tags.value.count {
-                let tag = viewModel.tags.value[indexPath.item]
-                cell.configure(with: tag)
+                provider.configureCell(cell, with: viewModel.tags.value[indexPath.item])
             }
-            return cell
-            
         case .advertisements:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.advertisementCell, for: indexPath) as! AdvertisementCollectionViewCell
             if indexPath.item < viewModel.advertisements.value.count {
-                let advertisement = viewModel.advertisements.value[indexPath.item]
-                cell.configure(with: advertisement)
+                provider.configureCell(cell, with: viewModel.advertisements.value[indexPath.item])
             }
-            return cell
-            
         case .products:
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.productCell, for: indexPath) as! ProductCollectionViewCell
             if indexPath.item < viewModel.products.value.count {
-                let product = viewModel.products.value[indexPath.item]
-                cell.configure(with: product)
+                provider.configureCell(cell, with: viewModel.products.value[indexPath.item])
             }
-            return cell
         }
+        
+        return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
             let headerView = collectionView.dequeueReusableSupplementaryView(
                 ofKind: kind,
-                withReuseIdentifier: CellIdentifier.headerCell,
+                withReuseIdentifier: "HeaderCell",
                 for: indexPath
             )
             
