@@ -2,6 +2,31 @@ import UIKit
 
 class ProfileViewController: UIViewController {
     
+    // MARK: - Section Types
+    enum SectionType: Int, CaseIterable {
+        case products = 0
+        case advertisements = 1
+        case tags = 2
+
+     
+        
+        var title: String {
+            switch self {
+            case .tags: return "Top Tags"
+            case .advertisements: return "Featured"
+            case .products: return "Products"
+            }
+        }
+    }
+    
+    // MARK: - Cell Identifiers
+    private enum CellIdentifier {
+        static let productCell = "ProductCell"
+        static let tagCell = "TagCell"
+        static let advertisementCell = "AdvertisementCell"
+        static let headerCell = "HeaderCell"
+    }
+    
     // MARK: - Outlets
     @IBOutlet weak var profileHeaderContainerView: UIView!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -11,13 +36,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var reviewsButton: UIButton!
     @IBOutlet weak var segmentIndicator: UIView!
     @IBOutlet weak var searchBar: UISearchBar!
-    @IBOutlet weak var tagsCollectionView: UICollectionView!
-    @IBOutlet weak var adsContainerView: UIView!
     @IBOutlet weak var settingsButton: UIButton!
     
     // MARK: - Properties
     private var viewModel: ProfileViewModelProtocol!
     private var profileHeaderView: ProfileHeaderView!
+    private let sections: [SectionType] = SectionType.allCases
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -28,8 +52,6 @@ class ProfileViewController: UIViewController {
         setupCollectionView()
         setupTabsView()
         setupSearch()
-        setupTagsCollectionView()
-        setupAdvertisementsView()
         
         bindViewModel()
         
@@ -63,7 +85,24 @@ class ProfileViewController: UIViewController {
         // Register cell nibs
         collectionView.register(
             UINib(nibName: "ProductCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: "ProductCell"
+            forCellWithReuseIdentifier: CellIdentifier.productCell
+        )
+        
+        collectionView.register(
+            UINib(nibName: "TagCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: CellIdentifier.tagCell
+        )
+        
+        collectionView.register(
+            UINib(nibName: "AdvertisementCollectionViewCell", bundle: nil),
+            forCellWithReuseIdentifier: CellIdentifier.advertisementCell
+        )
+        
+        // Register header
+        collectionView.register(
+            UICollectionReusableView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: CellIdentifier.headerCell
         )
         
         // Set up compositional layout
@@ -72,6 +111,15 @@ class ProfileViewController: UIViewController {
         // Set delegates
         collectionView.delegate = self
         collectionView.dataSource = self
+        
+        // Add some insets around the collection view
+        collectionView.contentInset = UIEdgeInsets(top: 8, left: 0, bottom: 16, right: 0)
+        
+        // Always show the vertical scroller for better UX
+        collectionView.alwaysBounceVertical = true
+        
+        // Set background color
+        collectionView.backgroundColor = .white
     }
     
     private func setupTabsView() {
@@ -96,53 +144,133 @@ class ProfileViewController: UIViewController {
     private func setupSearch() {
         searchBar.placeholder = Constants.Strings.searchHint
         searchBar.delegate = self
-    }
-    
-    private func setupTagsCollectionView() {
-        // Register cell nibs
-        tagsCollectionView.register(
-            UINib(nibName: "TagCollectionViewCell", bundle: nil),
-            forCellWithReuseIdentifier: "TagCell"
-        )
-        
-        // Set up horizontal scrolling layout
-        let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 120, height: 40)
-        layout.minimumLineSpacing = 8
-        tagsCollectionView.collectionViewLayout = layout
-        
-        // Set delegates
-        tagsCollectionView.delegate = self
-        tagsCollectionView.dataSource = self
-    }
-    
-    private func setupAdvertisementsView() {
-        // Setup advertisement views (simplified for demo)
+        searchBar.showsCancelButton = true
+        searchBar.autocapitalizationType = .none
+        searchBar.returnKeyType = .search
     }
     
     private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
-        // Create two-column grid layout
-        let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
+        let layout = UICollectionViewCompositionalLayout { [weak self] (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
+            guard let self = self else { return nil }
             
-            // Item size
-            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5),
-                                                 heightDimension: .estimated(300))
-            let item = NSCollectionLayoutItem(layoutSize: itemSize)
-            item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+            let sectionType = self.sections[sectionIndex]
             
-            // Group and section setup
-            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                                 heightDimension: .estimated(300))
-            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
-            
-            let section = NSCollectionLayoutSection(group: group)
-            section.contentInsets = NSDirectionalEdgeInsets(top: 16, leading: 8, bottom: 16, trailing: 8)
-            
-            return section
+            switch sectionType {
+            case .tags:
+                return self.createTagsSection()
+            case .advertisements:
+                return self.createAdvertisementsSection()
+            case .products:
+                return self.createProductsSection()
+            }
         }
         
         return layout
+    }
+    
+    private func createTagsSection() -> NSCollectionLayoutSection {
+        // Item
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .estimated(120),
+            heightDimension: .absolute(40)
+        )
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        // Group
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .absolute(50)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: groupSize,
+            subitems: [item]
+        )
+        group.interItemSpacing = .fixed(12)
+        
+        // Section
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top:0, leading: 16, bottom: 24, trailing: 16)
+        
+        // Header
+        let headerSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .absolute(50)
+        )
+        let header = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: headerSize,
+            elementKind: UICollectionView.elementKindSectionHeader,
+            alignment: .top
+        )
+        section.boundarySupplementaryItems = [header]
+        
+        return section
+    }
+    
+    private func createAdvertisementsSection() -> NSCollectionLayoutSection {
+        // Item
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .absolute(120)
+        )
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0)
+        
+        // Group
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1),
+            heightDimension: .absolute(120)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: groupSize,
+            subitems: [item]
+        )
+        
+        // Section
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 24, trailing: 0)
+        
+    
+        
+        return section
+    }
+    
+    private func createProductsSection() -> NSCollectionLayoutSection {
+        // Item
+        let itemSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1/3),
+            heightDimension: .estimated(280)
+        )
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+        
+        // Group
+        let groupSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .estimated(290)
+        )
+        let group = NSCollectionLayoutGroup.horizontal(
+            layoutSize: groupSize,
+            subitem: item,
+            count: 3
+        )
+        
+        // Section
+        let section = NSCollectionLayoutSection(group: group)
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 16, trailing: 8)
+        
+        // Header
+        let headerSize = NSCollectionLayoutSize(
+            widthDimension: .fractionalWidth(1.0),
+            heightDimension: .absolute(50)
+        )
+        let header = NSCollectionLayoutBoundarySupplementaryItem(
+            layoutSize: headerSize,
+            elementKind: UICollectionView.elementKindSectionHeader,
+            alignment: .top
+        )
+        section.boundarySupplementaryItems = [header]
+        
+        return section
     }
     
     // MARK: - Binding
@@ -153,8 +281,16 @@ class ProfileViewController: UIViewController {
             self.profileHeaderView.configure(with: user)
         }
         
-        // Bind products
+        // Bind products, tags, and advertisements
         viewModel.products.bind { [weak self] _ in
+            self?.collectionView.reloadData()
+        }
+        
+        viewModel.tags.bind { [weak self] _ in
+            self?.collectionView.reloadData()
+        }
+        
+        viewModel.advertisements.bind { [weak self] _ in
             self?.collectionView.reloadData()
         }
         
@@ -172,11 +308,6 @@ class ProfileViewController: UIViewController {
         // Bind tab selection
         viewModel.selectedTabIndex.bind { [weak self] index in
             self?.updateTabSelection(index: index)
-        }
-        
-        // Bind tags
-        viewModel.tags.bind { [weak self] _ in
-            self?.tagsCollectionView.reloadData()
         }
     }
     
@@ -249,38 +380,112 @@ class ProfileViewController: UIViewController {
 // MARK: - UICollectionViewDelegate, UICollectionViewDataSource
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return sections.count
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if collectionView == self.collectionView {
-            return viewModel.products.value.count
-        } else if collectionView == tagsCollectionView {
+        let sectionType = sections[section]
+        
+        switch sectionType {
+        case .tags:
             return viewModel.tags.value.count
+        case .advertisements:
+            return viewModel.advertisements.value.count
+        case .products:
+            return viewModel.products.value.count
         }
-        return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        if collectionView == self.collectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as! ProductCollectionViewCell
-            
-            let product = viewModel.products.value[indexPath.item]
-            cell.configure(with: product)
-            
+        let sectionType = sections[indexPath.section]
+        
+        switch sectionType {
+        case .tags:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.tagCell, for: indexPath) as! TagCollectionViewCell
+            if indexPath.item < viewModel.tags.value.count {
+                let tag = viewModel.tags.value[indexPath.item]
+                cell.configure(with: tag)
+            }
             return cell
-        } else if collectionView == tagsCollectionView {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TagCell", for: indexPath) as! TagCollectionViewCell
             
-            let tag = viewModel.tags.value[indexPath.item]
-            cell.configure(with: tag)
+        case .advertisements:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.advertisementCell, for: indexPath) as! AdvertisementCollectionViewCell
+            if indexPath.item < viewModel.advertisements.value.count {
+                let advertisement = viewModel.advertisements.value[indexPath.item]
+                cell.configure(with: advertisement)
+            }
+            return cell
             
+        case .products:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CellIdentifier.productCell, for: indexPath) as! ProductCollectionViewCell
+            if indexPath.item < viewModel.products.value.count {
+                let product = viewModel.products.value[indexPath.item]
+                cell.configure(with: product)
+            }
             return cell
         }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            let headerView = collectionView.dequeueReusableSupplementaryView(
+                ofKind: kind,
+                withReuseIdentifier: CellIdentifier.headerCell,
+                for: indexPath
+            )
+            
+            // Remove any existing label
+            headerView.subviews.forEach { $0.removeFromSuperview() }
+            
+            // Create section title label
+            let titleLabel = UILabel()
+            titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
+            titleLabel.textColor = .black
+            titleLabel.text = sections[indexPath.section].title
+            
+            // Add to header view
+            headerView.addSubview(titleLabel)
+            titleLabel.translatesAutoresizingMaskIntoConstraints = false
+            NSLayoutConstraint.activate([
+                titleLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 16),
+                titleLabel.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -16),
+                titleLabel.centerYAnchor.constraint(equalTo: headerView.centerYAnchor)
+            ])
+            
+            return headerView
+        }
         
-        return UICollectionViewCell()
+        return UICollectionReusableView()
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // Handle cell selection
         collectionView.deselectItem(at: indexPath, animated: true)
+        
+        let sectionType = sections[indexPath.section]
+        
+        switch sectionType {
+        case .tags:
+            if indexPath.item < viewModel.tags.value.count {
+                let tag = viewModel.tags.value[indexPath.item]
+                // Handle tag selection
+                print("Selected tag: \(tag.name)")
+            }
+            
+        case .advertisements:
+            if indexPath.item < viewModel.advertisements.value.count {
+                let advertisement = viewModel.advertisements.value[indexPath.item]
+                // Handle advertisement selection
+            }
+            
+        case .products:
+            if indexPath.item < viewModel.products.value.count {
+                let product = viewModel.products.value[indexPath.item]
+                // Handle product selection
+                print("Selected product: \(product.name)")
+            }
+        }
     }
 }
 
@@ -294,9 +499,7 @@ extension ProfileViewController: UISearchBarDelegate {
         }
         
         // Search products
-        viewModel.products.value = viewModel.products.value.filter { product in
-            return product.name.lowercased().contains(text.lowercased())
-        }
+//        viewModel.searchProducts(query: text)
         
         searchBar.resignFirstResponder()
     }
@@ -304,6 +507,15 @@ extension ProfileViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.isEmpty {
             viewModel.fetchProducts()
+        } else if searchText.count > 2 {
+            // Perform search if user has typed at least 3 characters
+//            viewModel.searchProducts(query: searchText)
         }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        viewModel.fetchProducts()
+        searchBar.resignFirstResponder()
     }
 }

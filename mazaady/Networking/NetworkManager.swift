@@ -49,8 +49,6 @@ class NetworkManager: NetworkManagerProtocol {
                 let result = try decoder.decode(T.self, from: data)
                 completion(.success(result))
             } catch {
-                print(endpoint)
-                print(data)
                 completion(.failure(NetworkError.decodingFailed(error)))
             }
         }

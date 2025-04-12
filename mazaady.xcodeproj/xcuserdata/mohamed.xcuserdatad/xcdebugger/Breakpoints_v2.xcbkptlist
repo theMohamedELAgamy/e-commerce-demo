@@ -30,8 +30,8 @@
             filePath = "mazaady/Networking/NetworkManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "fetch(endpoint:responseType:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -162,98 +162,22 @@
             endingLineNumber = "136"
             landmarkName = "fetchAdvertisements(completion:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "2173A66D-C6DD-4A97-9A89-D32CAF3E63EA - cfe1ed740120e8c8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;mazaady.AdvertisementsResponse, mazaady.APIError&gt;) -&gt; () in mazaady.DataManager.fetchAdvertisements(completion: (Swift.Result&lt;Swift.Array&lt;mazaady.Advertisement&gt;, mazaady.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "mazaady.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/Services/DataManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "136"
-                  endingLineNumber = "136">
-               </Location>
-               <Location
-                  uuid = "2173A66D-C6DD-4A97-9A89-D32CAF3E63EA - cfe1ed740120e8c8"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;mazaady.AdvertisementsResponse, mazaady.APIError&gt;) -&gt; () in mazaady.DataManager.fetchAdvertisements(completion: (Swift.Result&lt;Swift.Array&lt;mazaady.Advertisement&gt;, mazaady.APIError&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "mazaady.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/Services/DataManager.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "136"
-                  endingLineNumber = "136">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C019F1F2-A05D-4F15-9E26-41289CAA8876"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "mazaady/Networking/NetworkManager.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "fetch(endpoint:responseType:completion:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "4CBA9F50-EF2E-47BB-BF8E-C0A54E216B8E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "mazaady/Views/Advertisements/AdvertisementCollectionViewCell.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
             landmarkName = "configure(with:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4CBA9F50-EF2E-47BB-BF8E-C0A54E216B8E - 30c67802725a67ff"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mazaady.AdvertisementCollectionViewCell.configure(with: mazaady.Advertisement) -&gt; ()"
-                  moduleName = "mazaady.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/Views/Advertisements/AdvertisementCollectionViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67">
-               </Location>
-               <Location
-                  uuid = "4CBA9F50-EF2E-47BB-BF8E-C0A54E216B8E - 30c67802725a679e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "mazaady.AdvertisementCollectionViewCell.configure(with: mazaady.Advertisement) -&gt; ()"
-                  moduleName = "mazaady.debug.dylib"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/Views/Advertisements/AdvertisementCollectionViewCell.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
