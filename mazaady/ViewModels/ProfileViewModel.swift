@@ -12,9 +12,9 @@ protocol ProfileViewModelProtocol {
     func fetchUserProfile()
     func fetchProducts()
     func fetchTags()
-    func fetchReviews()
     func fetchAdvertisements()
     func setSelectedTab(index: Int)
+    func searchProducts(query:String)
 }
 
 class ProfileViewModel: ProfileViewModelProtocol {
@@ -27,7 +27,8 @@ class ProfileViewModel: ProfileViewModelProtocol {
     var selectedTabIndex: Observable<Int> = Observable(0)
     var isLoading: Observable<Bool> = Observable(false)
     var errorMessage: Observable<String?> = Observable(nil)
-    
+    private var allProducts: [Product] = []
+
     // MARK: - Services
     private let networkManager: NetworkManagerProtocol = NetworkManager.shared
     
@@ -54,7 +55,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
     func fetchProducts() {
         isLoading.value = true
         
-        networkManager.fetch(endpoint: .products(searchQuery: nil), responseType: ProductsResponse.self) { [weak self] result in
+        networkManager.fetch(endpoint: .products, responseType: ProductsResponse.self) { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {
@@ -63,6 +64,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
                 switch result {
                 case .success(let response):
                     self.products.value = response
+                    self.allProducts = response
                 case .failure(let error):
                     self.errorMessage.value = error.localizedDescription
                 }
@@ -89,14 +91,7 @@ class ProfileViewModel: ProfileViewModelProtocol {
         }
     }
     
-    func fetchReviews() {
-        // Would fetch reviews from API, simplified for this demo
-        isLoading.value = true
-        // Simulate API call delay
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
-            self.isLoading.value = false
-        }
-    }
+
     
     func fetchAdvertisements() {
         isLoading.value = true
@@ -119,6 +114,10 @@ class ProfileViewModel: ProfileViewModelProtocol {
     
     func setSelectedTab(index: Int) {
         selectedTabIndex.value = index
+    }
+    
+    func searchProducts(query: String) {
+        self.products.value=self.allProducts.filter{$0.name.lowercased().contains(query)}
     }
 }
 

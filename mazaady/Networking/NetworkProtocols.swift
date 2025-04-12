@@ -3,7 +3,7 @@ import Foundation
 // Protocol for network service
 protocol NetworkServiceProtocol {
     func fetchUserInfo(completion: @escaping (Result<User, APIError>) -> Void)
-    func fetchProducts(searchQuery: String?, completion: @escaping (Result<ProductsResponse, APIError>) -> Void)
+    func fetchProducts(completion: @escaping (Result<ProductsResponse, APIError>) -> Void)
     func fetchTags(completion: @escaping (Result<TagsResponse, APIError>) -> Void)
     func fetchAdvertisements(completion: @escaping (Result<AdvertisementsResponse, APIError>) -> Void)
 }
@@ -26,8 +26,8 @@ class NetworkService: NetworkServiceProtocol {
     }
     
     // Fetch products
-    func fetchProducts(searchQuery: String?, completion: @escaping (Result<ProductsResponse, APIError>) -> Void) {
-        let endpoint = APIEndpoint.getProducts(searchQuery: searchQuery)
+    func fetchProducts(completion: @escaping (Result<ProductsResponse, APIError>) -> Void) {
+        let endpoint = APIEndpoint.getProducts()
         performRequest(endpoint: endpoint, completion: completion)
     }
     

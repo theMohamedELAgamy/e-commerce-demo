@@ -3,9 +3,8 @@ import Foundation
 // Enum for API endpoints
 enum APIEndpoint {
     case user
-    case products(searchQuery: String?)
+    case products
     case tags
-    case reviews
     case advertisements
     
     // Factory methods for backward compatibility
@@ -13,8 +12,8 @@ enum APIEndpoint {
         return .user
     }
     
-    static func getProducts(searchQuery: String?) -> APIEndpoint {
-        return .products(searchQuery: searchQuery)
+    static func getProducts() -> APIEndpoint {
+        return .products
     }
     
     static func getTags() -> APIEndpoint {
@@ -33,19 +32,12 @@ enum APIEndpoint {
         case .user:
             return URL(string: baseURLString + Constants.API.profileEndpoint)
             
-        case .products(let searchQuery):
-            if let query = searchQuery, !query.isEmpty {
-                // Add search query parameter
-                return URL(string: baseURLString + Constants.API.searchEndpoint + "?q=\(query.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")")
-            } else {
-                return URL(string: baseURLString + Constants.API.productsEndpoint)
-            }
+        case .products:
+            return URL(string: baseURLString + Constants.API.productsEndpoint)
             
         case .tags:
             return URL(string: baseURLString + Constants.API.tagsEndpoint)
             
-        case .reviews:
-            return URL(string: baseURLString + Constants.API.reviewsEndpoint)
             
         case .advertisements:
             return URL(string: baseURLString + Constants.API.adsEndpoint)

@@ -28,7 +28,7 @@ class ProductListViewModel: ProductListViewModelProtocol {
         isLoading.value = true
         searchQuery.value = ""
         
-        networkManager.fetch(endpoint: .products(searchQuery: nil), responseType: ProductsResponse.self) { [weak self] result in
+        networkManager.fetch(endpoint: .products, responseType: ProductsResponse.self) { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {
@@ -53,7 +53,7 @@ class ProductListViewModel: ProductListViewModelProtocol {
         isLoading.value = true
         searchQuery.value = query
         
-        networkManager.fetch(endpoint: .products(searchQuery: query), responseType: ProductsResponse.self) { [weak self] result in
+        networkManager.fetch(endpoint: .products, responseType: ProductsResponse.self) { [weak self] result in
             guard let self = self else { return }
             
             DispatchQueue.main.async {

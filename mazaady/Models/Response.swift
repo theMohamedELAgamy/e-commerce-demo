@@ -29,7 +29,3 @@ struct AdvertisementsResponse: Codable {
 // API Response wrapper
 //typealias UserResponse = User
 
-// Response structure for reviews
-struct ReviewsResponse: Codable {
-    let data: [Review]
-}

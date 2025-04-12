@@ -9,7 +9,6 @@ protocol DataManagerProtocol {
     func fetchProducts(searchQuery: String?, completion: @escaping (Result<[Product], APIError>) -> Void)
     func fetchTags(completion: @escaping (Result<[Tag], APIError>) -> Void)
     func fetchAdvertisements(completion: @escaping (Result<[Advertisement], APIError>) -> Void)
-    func fetchReviews(completion: @escaping (Result<[Review], APIError>) -> Void)
 }
 
 // Data manager combines network and cache services
@@ -54,7 +53,7 @@ class DataManager: DataManagerProtocol {
     func fetchProducts(searchQuery: String?, completion: @escaping (Result<[Product], APIError>) -> Void) {
         // If search query is provided, skip cache and always make a network request
         if let searchQuery = searchQuery, !searchQuery.isEmpty {
-            networkService.fetchProducts(searchQuery: searchQuery) { result in
+            networkService.fetchProducts() { result in
                 switch result {
                 case .success(let products):
                     // Products are already an array, no need to unwrap from response.data
@@ -79,7 +78,7 @@ class DataManager: DataManagerProtocol {
         }
         
         // Make network request
-        networkService.fetchProducts(searchQuery: nil) { [weak self] result in
+        networkService.fetchProducts() { [weak self] result in
             switch result {
             case .success(let response):
                 // Cache the response
@@ -148,16 +147,7 @@ class DataManager: DataManagerProtocol {
         }
     }
     
-    // Fetch reviews (mock implementation for now)
-    func fetchReviews(completion: @escaping (Result<[Review], APIError>) -> Void) {
-        // For demo purposes, return mock data
-        #if DEBUG
-        completion(.success(Review.mockReviews))
-        #else
-        // In a real app, we would have a reviews endpoint
-        completion(.failure(.serverError))
-        #endif
-    }
+
 }
 
 // If using protocol from another file, this won't conflict
@@ -217,7 +207,6 @@ class CacheService: CacheServiceProtocol {
             Constants.CacheKeys.products,
             Constants.CacheKeys.tags,
             Constants.CacheKeys.advertisements,
-            Constants.CacheKeys.reviews
         ]
         
         for key in allKeys {

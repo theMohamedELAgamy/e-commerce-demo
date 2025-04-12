@@ -158,13 +158,13 @@
             filePath = "mazaady/Services/DataManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "136"
-            endingLineNumber = "136"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "fetchAdvertisements(completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2173A66D-C6DD-4A97-9A89-D32CAF3E63EA - cfe1ed740120e8c8"
+                  uuid = "2173A66D-C6DD-4A97-9A89-D32CAF3E63EA - cfe1ed740120e8a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -174,11 +174,11 @@
                   urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/Services/DataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "136"
-                  endingLineNumber = "136">
+                  startingLineNumber = "135"
+                  endingLineNumber = "135">
                </Location>
                <Location
-                  uuid = "2173A66D-C6DD-4A97-9A89-D32CAF3E63EA - cfe1ed740120e8c8"
+                  uuid = "2173A66D-C6DD-4A97-9A89-D32CAF3E63EA - cfe1ed740120e8a9"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -188,8 +188,8 @@
                   urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/Services/DataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "136"
-                  endingLineNumber = "136">
+                  startingLineNumber = "135"
+                  endingLineNumber = "135">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -207,6 +207,38 @@
             startingLineNumber = "24"
             endingLineNumber = "24"
             landmarkName = "configure(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDF3BC2B-920F-4F15-B5A7-A8A1BE60212E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mazaady/Views/Profile/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "bindViewModel()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF1EAD8C-1716-4199-95CB-2C5D2BB656D1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "mazaady/ViewModels/ProfileViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "searchProducts(query:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

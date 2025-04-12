@@ -137,15 +137,15 @@ class ProfileViewController: UIViewController {
         
         // Bind products, tags, and advertisements
         viewModel.products.bind { [weak self] _ in
-            self?.collectionView.reloadData()
+            self?.collectionView.reloadSections(IndexSet(integer: SectionType.products.rawValue))
         }
         
         viewModel.tags.bind { [weak self] _ in
-            self?.collectionView.reloadData()
+            self?.collectionView.reloadSections(IndexSet(integer: SectionType.tags.rawValue))
         }
         
         viewModel.advertisements.bind { [weak self] _ in
-            self?.collectionView.reloadData()
+            self?.collectionView.reloadSections(IndexSet(integer: SectionType.advertisements.rawValue))
         }
         
         // Bind error message
@@ -197,7 +197,7 @@ class ProfileViewController: UIViewController {
             // For articles tab - not implemented in this demo
             break
         case 2:
-            viewModel.fetchReviews()
+            break
         default:
             break
         }
@@ -345,9 +345,7 @@ extension ProfileViewController: UISearchBarDelegate {
             viewModel.fetchProducts()
             return
         }
-        
-        // Search products
-        // viewModel.searchProducts(query: text)
+         viewModel.searchProducts(query: text)
         
         searchBar.resignFirstResponder()
     }
@@ -356,8 +354,7 @@ extension ProfileViewController: UISearchBarDelegate {
         if searchText.isEmpty {
             viewModel.fetchProducts()
         } else if searchText.count > 2 {
-            // Perform search if user has typed at least 3 characters
-            // viewModel.searchProducts(query: searchText)
+             viewModel.searchProducts(query: searchText)
         }
     }
     

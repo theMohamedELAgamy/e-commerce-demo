@@ -48,9 +48,7 @@ struct Constants {
         static let profileEndpoint = "/user"
         static let productsEndpoint = "/products"
         static let tagsEndpoint = "/tags"
-        static let reviewsEndpoint = "/reviews"
         static let adsEndpoint = "/advertisements"
-        static let searchEndpoint = "/search"
     }
     
     // MARK: - Cache Keys
@@ -59,7 +57,6 @@ struct Constants {
         static let products = "products_cache"
         static let tags = "tags_cache"
         static let advertisements = "advertisements_cache"
-        static let reviews = "reviews_cache"
     }
     
     // MARK: - UserDefaults Keys
