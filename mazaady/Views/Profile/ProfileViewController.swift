@@ -1,3 +1,5 @@
+// MARK: - Main ViewController
+
 import UIKit
 
 class ProfileViewController: UIViewController {
@@ -7,8 +9,6 @@ class ProfileViewController: UIViewController {
         case products = 0
         case advertisements = 1
         case tags = 2
-
-     
         
         var title: String {
             switch self {
@@ -42,12 +42,14 @@ class ProfileViewController: UIViewController {
     private var viewModel: ProfileViewModelProtocol!
     private var profileHeaderView: ProfileHeaderView!
     private let sections: [SectionType] = SectionType.allCases
+    private var layoutFactory: CollectionViewLayoutFactoryProtocol!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupViewModel()
+        setupLayoutFactory()
         setupProfileHeaderView()
         setupCollectionView()
         setupTabsView()
@@ -62,6 +64,10 @@ class ProfileViewController: UIViewController {
     // MARK: - Setup
     private func setupViewModel() {
         viewModel = ProfileViewModel()
+    }
+    
+    private func setupLayoutFactory() {
+        layoutFactory = ProfileCollectionViewLayoutFactory()
     }
     
     private func setupProfileHeaderView() {
@@ -105,8 +111,8 @@ class ProfileViewController: UIViewController {
             withReuseIdentifier: CellIdentifier.headerCell
         )
         
-        // Set up compositional layout
-        collectionView.collectionViewLayout = createCompositionalLayout()
+        // Set up compositional layout using our factory
+        collectionView.collectionViewLayout = layoutFactory.createLayout()
         
         // Set delegates
         collectionView.delegate = self
@@ -147,130 +153,6 @@ class ProfileViewController: UIViewController {
         searchBar.showsCancelButton = true
         searchBar.autocapitalizationType = .none
         searchBar.returnKeyType = .search
-    }
-    
-    private func createCompositionalLayout() -> UICollectionViewCompositionalLayout {
-        let layout = UICollectionViewCompositionalLayout { [weak self] (sectionIndex, layoutEnvironment) -> NSCollectionLayoutSection? in
-            guard let self = self else { return nil }
-            
-            let sectionType = self.sections[sectionIndex]
-            
-            switch sectionType {
-            case .tags:
-                return self.createTagsSection()
-            case .advertisements:
-                return self.createAdvertisementsSection()
-            case .products:
-                return self.createProductsSection()
-            }
-        }
-        
-        return layout
-    }
-    
-    private func createTagsSection() -> NSCollectionLayoutSection {
-        // Item
-        let itemSize = NSCollectionLayoutSize(
-            widthDimension: .estimated(120),
-            heightDimension: .absolute(40)
-        )
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        
-        // Group
-        let groupSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(50)
-        )
-        let group = NSCollectionLayoutGroup.horizontal(
-            layoutSize: groupSize,
-            subitems: [item]
-        )
-        group.interItemSpacing = .fixed(12)
-        
-        // Section
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top:0, leading: 16, bottom: 24, trailing: 16)
-        
-        // Header
-        let headerSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(50)
-        )
-        let header = NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: headerSize,
-            elementKind: UICollectionView.elementKindSectionHeader,
-            alignment: .top
-        )
-        section.boundarySupplementaryItems = [header]
-        
-        return section
-    }
-    
-    private func createAdvertisementsSection() -> NSCollectionLayoutSection {
-        // Item
-        let itemSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(120)
-        )
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0)
-        
-        // Group
-        let groupSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1),
-            heightDimension: .absolute(120)
-        )
-        let group = NSCollectionLayoutGroup.horizontal(
-            layoutSize: groupSize,
-            subitems: [item]
-        )
-        
-        // Section
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 16, bottom: 24, trailing: 0)
-        
-    
-        
-        return section
-    }
-    
-    private func createProductsSection() -> NSCollectionLayoutSection {
-        // Item
-        let itemSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1/3),
-            heightDimension: .estimated(280)
-        )
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-        item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
-        
-        // Group
-        let groupSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
-            heightDimension: .estimated(290)
-        )
-        let group = NSCollectionLayoutGroup.horizontal(
-            layoutSize: groupSize,
-            subitem: item,
-            count: 3
-        )
-        
-        // Section
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 8, bottom: 16, trailing: 8)
-        
-        // Header
-        let headerSize = NSCollectionLayoutSize(
-            widthDimension: .fractionalWidth(1.0),
-            heightDimension: .absolute(50)
-        )
-        let header = NSCollectionLayoutBoundarySupplementaryItem(
-            layoutSize: headerSize,
-            elementKind: UICollectionView.elementKindSectionHeader,
-            alignment: .top
-        )
-        section.boundarySupplementaryItems = [header]
-        
-        return section
     }
     
     // MARK: - Binding
@@ -499,7 +381,7 @@ extension ProfileViewController: UISearchBarDelegate {
         }
         
         // Search products
-//        viewModel.searchProducts(query: text)
+        // viewModel.searchProducts(query: text)
         
         searchBar.resignFirstResponder()
     }
@@ -509,7 +391,7 @@ extension ProfileViewController: UISearchBarDelegate {
             viewModel.fetchProducts()
         } else if searchText.count > 2 {
             // Perform search if user has typed at least 3 characters
-//            viewModel.searchProducts(query: searchText)
+            // viewModel.searchProducts(query: searchText)
         }
     }
     
