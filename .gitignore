@@ -1,0 +1,70 @@
+# Xcode
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.moved-aside
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# SwiftPM
+.build/
+Packages/
+.swiftpm/xcode/package.xcworkspace
+
+# CocoaPods
+Pods/
+Podfile.lock
+*.xcworkspace
+
+# Carthage (if used)
+Carthage/
+Carthage/Checkouts/
+Carthage/Build/
+
+# Fastlane (if used)
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Xcode Previews
+*.preview-thumbnails
+
+# Swift Package Manager build folder
+.build/
+
+# Archive
+*.xcarchive
+
+# App Thinning folder
+App Thinning Size Report*/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Firebase crashlytics
+*.dSYM.zip
+*.dSYM
+
+# Temporary files
+*.tmp
+*.swp
+*~
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
