@@ -240,6 +240,36 @@
             endingLineNumber = "120"
             landmarkName = "searchProducts(query:)"
             landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "EF1EAD8C-1716-4199-95CB-2C5D2BB656D1 - 8f89220d60b5f971"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "mazaady.ProfileViewModel.searchProducts(query: Swift.String) -&gt; ()"
+                  moduleName = "mazaady.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/ViewModels/ProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120">
+               </Location>
+               <Location
+                  uuid = "EF1EAD8C-1716-4199-95CB-2C5D2BB656D1 - 4a2d2f8475920dfc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (mazaady.Product) -&gt; Swift.Bool in mazaady.ProfileViewModel.searchProducts(query: Swift.String) -&gt; ()"
+                  moduleName = "mazaady.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mohamed/Downloads/mazaady/mazaady/ViewModels/ProfileViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

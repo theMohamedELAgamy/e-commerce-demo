@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="Mazaady" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="mazaady" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="gkx-Jx-hZu" id="2Tk-UJ-7qN"/>
-                <outlet property="collectionView" destination="kQF-nD-1bb" id="6Kc-nV-nOG"/>
                 <outlet property="emptyStateLabel" destination="sZ7-kO-eDt" id="iLW-UR-fYx"/>
                 <outlet property="emptyStateView" destination="5Nm-O0-V22" id="dxf-Ci-FxK"/>
                 <outlet property="searchBar" destination="l8Y-Z6-iud" id="zfi-ub-f1a"/>
@@ -46,24 +45,14 @@
                     <rect key="frame" x="0.0" y="123" width="393" height="56"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kQF-nD-1bb">
-                    <rect key="frame" x="0.0" y="179" width="393" height="639"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vwW-qZ-Z1C">
-                        <size key="itemSize" width="128" height="128"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                    </collectionViewFlowLayout>
-                </collectionView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Nm-O0-V22" userLabel="Empty State View">
                     <rect key="frame" x="0.0" y="179" width="393" height="639"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="6LN-mV-2lZ">
-                            <rect key="frame" x="16" y="285.66666666666663" width="361" height="68"/>
+                            <rect key="frame" x="16" y="282.66666666666669" width="361" height="74"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="6Ss-Dd-nFb">
-                                    <rect key="frame" x="160.66666666666666" y="0.5" width="40" height="39"/>
+                                    <rect key="frame" x="160.66666666666666" y="0.99999999999999645" width="40" height="38.333333333333329"/>
                                     <color key="tintColor" systemColor="systemGrayColor"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="40" id="JFd-1j-4wc"/>
@@ -71,7 +60,7 @@
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No products found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZ7-kO-eDt">
-                                    <rect key="frame" x="115.66666666666667" y="56" width="129.66666666666663" height="12"/>
+                                    <rect key="frame" x="116.33333333333333" y="55.999999999999943" width="128.33333333333337" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                     <color key="textColor" systemColor="systemGrayColor"/>
                                     <nil key="highlightedColor"/>
@@ -94,16 +83,12 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="l8Y-Z6-iud" firstAttribute="top" secondItem="lc1-tL-LI0" secondAttribute="bottom" id="5H4-Y6-WUY"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kQF-nD-1bb" secondAttribute="trailing" id="8lj-Qd-dn4"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kQF-nD-1bb" secondAttribute="bottom" id="Dlm-lJ-sS1"/>
                 <constraint firstItem="5Nm-O0-V22" firstAttribute="top" secondItem="l8Y-Z6-iud" secondAttribute="bottom" id="OIT-cg-ghf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="l8Y-Z6-iud" secondAttribute="trailing" id="R05-ew-7iV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lc1-tL-LI0" secondAttribute="trailing" id="VM4-p2-UbN"/>
-                <constraint firstItem="kQF-nD-1bb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Vba-SV-1L8"/>
                 <constraint firstItem="gkx-Jx-hZu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="X0T-2U-3uA"/>
                 <constraint firstItem="5Nm-O0-V22" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="XK2-zU-5Zt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="5Nm-O0-V22" secondAttribute="bottom" id="Zj9-BW-pz3"/>
-                <constraint firstItem="kQF-nD-1bb" firstAttribute="top" secondItem="l8Y-Z6-iud" secondAttribute="bottom" id="a0O-nz-gE1"/>
                 <constraint firstItem="lc1-tL-LI0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aj5-oA-Z1L"/>
                 <constraint firstItem="gkx-Jx-hZu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="fxQ-LI-JRi"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Nm-O0-V22" secondAttribute="trailing" id="nAT-sT-Vcy"/>
@@ -119,7 +104,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
